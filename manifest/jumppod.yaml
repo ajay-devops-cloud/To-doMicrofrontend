@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: firefoxjump-pod 
 spec:
-  container: 
+  containers: 
     - image: linuxserver/firefox
       name: firefox
       ports:
