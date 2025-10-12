@@ -7,7 +7,7 @@ metadata:
 spec:
   selector:
     app: app-todo
-  type: ClusterIP
+  type: LoadBalancer
   ports:
     - port: 80
       targetPort: 80
