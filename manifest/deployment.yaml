@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: todo-frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: app-todo
+  template:
+    metadata:
+      labels:
+        app: app-todo
+    spec:
+      containers: 
+        - image: rk8sacr.azurecr.io/todo-ui:v1
+          name: app-todo
+          ports:
+            - containerPort: 80
