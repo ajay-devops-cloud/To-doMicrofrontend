@@ -11,7 +11,7 @@ env:
   ACR_LOGIN_SERVER: rk8sacr.azurecr.io
 jobs:
   build-and-push:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     
 
     steps:
